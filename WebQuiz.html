@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="web.css">
+    <script src="web.js" defer></script>
+</head>
+
+<body>
+    <audio id="correctSound" src="/assets/correct.mp3" preload="auto"></audio>
+    <audio id="errorSound" src="/assets/wrong.mp3" preload="auto"></audio>
+
+    <div id="showmenu" class="show">
+        <div id="close">
+            &times;
+        </div>
+        <div class="list">
+            <ul>
+                <li id="resetscore"><span style="font-size: 25px;" class="material-icons">
+                        sports_score
+                    </span>Reset Score</li>
+                <li><span class="material-icons">
+                        account_circle
+                    </span>Login</li>
+                <li><span class="material-icons">
+                        contacts
+                    </span><a style="color: white; text-decoration: none;"
+                        href="https://www.instagram.com/its_zarqu?igsh=MWdhcGlwOWd1dTd3OQ==">Contact us</a></li>
+                <li><span class="material-icons">
+                        info
+                    </span>About us</li>
+            </ul>
+        </div>
+    </div>
+    <nav>
+        <span id="menu" class="material-icons">
+            menu
+        </span>
+        <h2 style="color: rgb(255, 255, 255); text-transform: uppercase; cursor: default;">Quiz competition</h2>
+        <span id="vol" class="material-icons">
+            volume_off
+        </span>
+        <audio id="bgmusic" src="/assets/Indila Instrumental.mp3" type="audio/mpeg" loop></audio>
+
+    </nav>
+    <div class="page1">
+        <img draggable="false"
+            src="https://static.vecteezy.com/system/resources/thumbnails/050/703/515/small/megaphone-label-set-with-text-quiz-time-quiz-time-announcement-banner-png.png"
+            alt="">
+        <h3>Highest Score: <span id="highscore">0</span></h3>
+        <div class="start_box">
+            <div class="start flex">
+                <span>Start Now >>></span>
+            </div>
+        </div>
+        <p>Made with ❤️ by Zarqan</p>
+    </div>
+    <div class="page2">
+        <div class="level">
+            <h2>0/10</h2>
+        </div>
+        <div class="question">
+            <p>Inside which HTML element do we put the JavaScript? </p>
+        </div>
+        <div class="timer">
+            <h2>15 Sec</h2>
+        </div>
+        <div class="ansbox">
+            <div class="answer a1"><span class="ans">a</span>
+                <span class="material-icons all icon"></span>
+            </div>
+            <div class="answer a2"><span class="ans">b</span>
+                <span class="material-icons all icon"></span>
+            </div>
+            <div class="answer a3"><span class="ans">c</span>
+                <span class="material-icons all icon"></span>
+            </div>
+            <div class="answer a4"><span class="ans">d</span>
+                <span class="material-icons all icon"></span>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: end; margin-right: 30px;">
+            <button id="next">Next ></button>
+        </div>
+        <p style="text-align: center;">Made with ❤️ by Zarqan</p>
+    </div>
+    <div class="page3">
+        <div>
+            <h1>Result</h1>
+        </div>
+        <div>
+            <div class="lc flex">
+                <div class="sc flex">
+                    <h2>10/10</h2>
+                </div>
+            </div>
+        </div>
+        <p>Highest Score: <span id="p3hs">0</span></p>
+        <div class="flex">
+            <p>“Keep learning, you have a good score!”</p>
+            <div class="retry">
+                <div class="start flex">
+                    <span>
+                        <<< Retry</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Made with ❤️ by Zarqan</p>
+        </div>
+    </div>
+</body>
+
+</html>
